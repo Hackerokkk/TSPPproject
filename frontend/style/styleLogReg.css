@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../src/gray_background2.jpg") ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+h2 {
+    text-align: center;
+}
+
+div#pop {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div#link {
+    margin-left: 80%;
+    width: 20%;
+    min-width: 20%;
+    font-size: 20px;
+}
+
+input#submitLink {
+    background-color:#2a652a;
+    font-size: 20px;
+}
+
+div#errorDisplay {
+    display: none;
+    background-color: #ffe6e6;
+    color: #ff0000; 
+    border: 1px solid #ff9999; 
+    padding: 10px;
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+div#succesDisplay {
+    display: none;
+    background-color: #e6f7e6; 
+    color: #008000; 
+    border: 1px solid #4CAF50; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}

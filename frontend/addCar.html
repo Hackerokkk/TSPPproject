@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/frontend/style/styleDef.css">
+    <title>Car Service - Add Car</title>
+</head>
+<body>
+    <nav class="nav__cont">
+        <ul class="nav">
+          <li class="nav__items ">
+            <img src = "src/svg/carServise.svg"/>
+            <a href="main.html">Сервіс</a>
+          </li>
+
+          <li class="nav__items ">
+            <img src="src/svg/calendar.svg"/>
+           <a href="reminder.html">Нагадування</a>
+          </li>
+          
+          <li class="nav__items ">
+            <img src = "src/svg/carAdd.svg"/>
+            <a href="addCar.html">Додати авто</a>
+          </li>
+            
+          <li class="nav__items ">
+            <img src = "src/svg/settings.svg"/>
+           <a href="interval.html">Налаштування</a>
+          </li>
+            
+          <li class="nav__items" id="logout-button" >
+            <img src = "src/svg/logout.svg"/>
+            <a href="#" id="logoutBtn">Вихід</a>
+          </li>  
+              
+        </ul>
+      </nav>
+      <div id="UserInfo">        
+        <span id="userEmail"></span>
+        <br><span id="userName"></span>
+      </div>
+    <div id="errorDisplay"></div>
+    <div id="succesDisplay"></div>
+    <div id="pop"> 
+        <h2>Введеіть дані  про автомобіль:</h2>
+            <label for="carsBrand">Марка:</label>
+            <input type="text" id="carsBrand" name="carsBrand" required>
+
+            <label for="carsModel">Модель:</label>
+            <input type="text" id="carsModel" name="carsModel" required>
+
+            <label for="carsMileage">Пробіг:</label>
+            <input type="text" id="carsMileage" name="carsMileage" required>
+
+            <label for="carsYear">Рік випуску:</label>
+            <input type="text" id="carsYear" name="carsYear" required>
+
+            <input id="submitAddCar" type="submit" value="Додати авто">
+    </h2>
+</div>
+<script type="module" src="/frontend/modules/UserInfoDisplay.mjs"></script>
+<script type="module" src="/frontend/js/addCar.js"></script>
+<script type="module" src="/frontend/modules/logout.mjs"></script>
+</body>
+</html>
